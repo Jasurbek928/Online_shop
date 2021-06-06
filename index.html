@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Online shop 2</title>
+</head>
+<body>
+     <div class="container-fluid">
+         <h1 class="h2 text-center">Onlayn do'kon</h1>
+
+         <div class="row">
+             <div class="col-12">
+                 <h2 class="h4">Boshqaruvchi buyruqlar</h2>
+                 <form class="form-inline">
+                    
+                    <input type="number" class="form-control mr-4" id="money-in-wallet-input" min="1" placeholder="Money in wallet">
+                    <button type="button" class="btn btn-primary mr-4" id="save-money-in-wallet-btn">Save</button>
+                    <span>Hamyonda: <strong id="money-in-wallet-text">0</strong> so'm</span>
+                    </form>
+             </div>
+         </div>
+         <hr>
+         <div class="row no-gutters">
+             <div class="col-12 col-sm-8 col-md-9">
+                 <div class="row" id="product-wrapper">
+                    <div class="col-12">
+                        <p class="text-center">Hozircha mahsulotlar yo'q</p>
+                    </div>
+                 </div>
+             </div>
+             <div class="col-12 col-sm-4 col-md-3 border-left pl-3 pb-3">
+                 <h2 class="h3 text-center">Savatcha</h2>
+                 <hr>
+                 <ul id="basket" class="list-unstyled">
+                     <li class="basket-item border-bottom pb-2">
+                            <div class="d-flex justify-content-between mb-2 basket-product-name-price">
+                                <strong class="basket-item_name">Product name</strong>
+                                <span><strong class="basket-item_price">Product price</strong> so'm</span>
+                            </div>
+                            
+                            <div class="calcs d-flex justify-content-between align-items-center">
+                                <span class="basket-item_price">500</span>*<span class="basket-item_quantity">3</span>=
+                                <span class="basket-item_total">1500</span>
+                                <button class="btn-default minus-basket-item">-</button><button class="btn-default plus-basket-item">+</button>
+                            </div>
+                     </li>
+
+                   
+                 </ul>
+
+                 <div class="d-flex justify-content-between align-items-center" id="basket-total ">
+                    <span>Jami: <strong class="basket-total-text">1500</strong> USZ</span>
+                    <buttn class="btn btn-success" id="buy-product-btn">Buy</buttn>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <script src="./bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./tovar.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>

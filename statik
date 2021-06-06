@@ -1,0 +1,15 @@
+<div class="col-6 col-sm-4 col-xl-3">
+    <div class="card-product mx-1 mb-3">
+        <img src="./img/airports.jpg" class="card-img-top product_image" alt="rasm">
+           <div class="card-body text-center p-2">
+                   <h4 class="h5 product_name">Tovar nomi</h4>
+                   <div class="product_price mb-2">0 000 so'm</div>
+                   <div class="d-flex justify-content-between mb-3">
+                       <button class="remove-one-btn btn btn-default btn-sm bg-secondary w-25">-</button>
+                       <input type="number" class="form-control mx-1">
+                       <button class="add-one-btn btn btn-default btn-sm bg-secondary w-25">+</button>
+                   </div>
+                   <div class="btn btn-block btn-success">Add to basket</div>
+           </div>
+       </div>
+</div>
